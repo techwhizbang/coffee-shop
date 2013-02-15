@@ -7,7 +7,7 @@ describe Barista do
   describe "#get_cup_of" do
 
     before do
-      Frother.stub(:froth_it_up).and_return("frothy milk")
+      Frother.stub(:froth).and_return("frothy milk")
     end
 
     subject(:cup_of_something) { barista.get_cup_of(drink_order) }
